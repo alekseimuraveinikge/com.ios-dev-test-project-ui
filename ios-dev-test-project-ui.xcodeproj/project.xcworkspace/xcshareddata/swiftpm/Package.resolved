@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "chtcollectionviewwaterfalllayout",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/chiahsien/CHTCollectionViewWaterfallLayout.git",
+      "state" : {
+        "revision" : "79846eb772ea7184c6f1003d923b81c6d113972d",
+        "version" : "0.9.9"
+      }
+    },
+    {
+      "identity" : "swiftygif",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/kirualex/SwiftyGif.git",
+      "state" : {
+        "revision" : "db0c122b671bc9760385e0355be00eede3b7bb44",
+        "version" : "5.4.3"
+      }
+    }
+  ],
+  "version" : 2
+}

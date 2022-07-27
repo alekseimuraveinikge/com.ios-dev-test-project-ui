@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  ios-dev-test-project-ui
-//
-//  Created by Apple on 26.07.22.
-//
-
 import UIKit
 
 @main
@@ -18,7 +11,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	) -> Bool {
 	
 		let window = UIWindow(frame: UIScreen.main.bounds)
-		let controller = MainViewController()
+		let controller = MainViewController(
+			networkService: NetworkService()
+		)
 		window.rootViewController = controller
 		window.makeKeyAndVisible()
 		self.window = window

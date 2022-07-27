@@ -7,14 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		183443C128915B0200A8B33D /* SwiftyGif in Frameworks */ = {isa = PBXBuildFile; productRef = 183443C028915B0200A8B33D /* SwiftyGif */; };
+		186FA275289129C500A27C2A /* CHTCollectionViewWaterfallLayout in Frameworks */ = {isa = PBXBuildFile; productRef = 186FA274289129C500A27C2A /* CHTCollectionViewWaterfallLayout */; };
+		186FA278289129F000A27C2A /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186FA277289129F000A27C2A /* ImageCell.swift */; };
+		186FA27A2891322F00A27C2A /* Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186FA2792891322F00A27C2A /* Palette.swift */; };
 		18AA44DD28901CD70059F757 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AA44DC28901CD70059F757 /* AppDelegate.swift */; };
 		18AA44E128901CD70059F757 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AA44E028901CD70059F757 /* MainViewController.swift */; };
 		18AA44E628901CD70059F757 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18AA44E528901CD70059F757 /* Assets.xcassets */; };
 		18AA44E928901CD70059F757 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18AA44E728901CD70059F757 /* LaunchScreen.storyboard */; };
 		18AA44F328901E960059F757 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AA44F228901E960059F757 /* MainView.swift */; };
+		18AA44F6289021EC0059F757 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AA44F5289021EC0059F757 /* ShareViewController.swift */; };
+		18AA44F8289021F20059F757 /* ShareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AA44F7289021F20059F757 /* ShareView.swift */; };
+		18E8504F2890576300CE8639 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E8504E2890576300CE8639 /* NetworkService.swift */; };
+		18E8505628905CCA00CE8639 /* Trending.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E8505528905CCA00CE8639 /* Trending.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		186FA277289129F000A27C2A /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
+		186FA2792891322F00A27C2A /* Palette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Palette.swift; sourceTree = "<group>"; };
 		18AA44D928901CD70059F757 /* ios-dev-test-project-ui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-dev-test-project-ui.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18AA44DC28901CD70059F757 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18AA44E028901CD70059F757 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +32,10 @@
 		18AA44E828901CD70059F757 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18AA44EA28901CD70059F757 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18AA44F228901E960059F757 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		18AA44F5289021EC0059F757 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		18AA44F7289021F20059F757 /* ShareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareView.swift; sourceTree = "<group>"; };
+		18E8504E2890576300CE8639 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		18E8505528905CCA00CE8639 /* Trending.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trending.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,12 +43,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				186FA275289129C500A27C2A /* CHTCollectionViewWaterfallLayout in Frameworks */,
+				183443C128915B0200A8B33D /* SwiftyGif in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		186FA276289129D400A27C2A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				186FA277289129F000A27C2A /* ImageCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		18AA44D028901CD70059F757 = {
 			isa = PBXGroup;
 			children = (
@@ -55,8 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				18AA44F028901DAF0059F757 /* Resources */,
-				18AA44F128901E7E0059F757 /* Main */,
-				18AA44DC28901CD70059F757 /* AppDelegate.swift */,
+				18E8504D2890575000CE8639 /* Source */,
 			);
 			path = "ios-dev-test-project-ui";
 			sourceTree = "<group>";
@@ -67,6 +90,7 @@
 				18AA44E528901CD70059F757 /* Assets.xcassets */,
 				18AA44E728901CD70059F757 /* LaunchScreen.storyboard */,
 				18AA44EA28901CD70059F757 /* Info.plist */,
+				186FA2792891322F00A27C2A /* Palette.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -78,6 +102,44 @@
 				18AA44F228901E960059F757 /* MainView.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		18AA44F4289021A20059F757 /* Share */ = {
+			isa = PBXGroup;
+			children = (
+				18AA44F5289021EC0059F757 /* ShareViewController.swift */,
+				18AA44F7289021F20059F757 /* ShareView.swift */,
+			);
+			path = Share;
+			sourceTree = "<group>";
+		};
+		18E8504D2890575000CE8639 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				18AA44DC28901CD70059F757 /* AppDelegate.swift */,
+				18E8505428905CC200CE8639 /* Model */,
+				18E8505A28905D0500CE8639 /* Modules */,
+				186FA276289129D400A27C2A /* Views */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		18E8505428905CC200CE8639 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				18E8505528905CCA00CE8639 /* Trending.swift */,
+				18E8504E2890576300CE8639 /* NetworkService.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18E8505A28905D0500CE8639 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				18AA44F128901E7E0059F757 /* Main */,
+				18AA44F4289021A20059F757 /* Share */,
+			);
+			path = Modules;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +158,10 @@
 			dependencies = (
 			);
 			name = "ios-dev-test-project-ui";
+			packageProductDependencies = (
+				186FA274289129C500A27C2A /* CHTCollectionViewWaterfallLayout */,
+				183443C028915B0200A8B33D /* SwiftyGif */,
+			);
 			productName = "ios-dev-test-project-ui";
 			productReference = 18AA44D928901CD70059F757 /* ios-dev-test-project-ui.app */;
 			productType = "com.apple.product-type.application";
@@ -124,6 +190,10 @@
 				Base,
 			);
 			mainGroup = 18AA44D028901CD70059F757;
+			packageReferences = (
+				186FA273289129C500A27C2A /* XCRemoteSwiftPackageReference "CHTCollectionViewWaterfallLayout" */,
+				183443BF28915B0200A8B33D /* XCRemoteSwiftPackageReference "SwiftyGif" */,
+			);
 			productRefGroup = 18AA44DA28901CD70059F757 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -150,8 +220,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18AA44F8289021F20059F757 /* ShareView.swift in Sources */,
+				18E8505628905CCA00CE8639 /* Trending.swift in Sources */,
+				186FA278289129F000A27C2A /* ImageCell.swift in Sources */,
+				186FA27A2891322F00A27C2A /* Palette.swift in Sources */,
 				18AA44E128901CD70059F757 /* MainViewController.swift in Sources */,
 				18AA44F328901E960059F757 /* MainView.swift in Sources */,
+				18AA44F6289021EC0059F757 /* ShareViewController.swift in Sources */,
+				18E8504F2890576300CE8639 /* NetworkService.swift in Sources */,
 				18AA44DD28901CD70059F757 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -220,7 +296,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -274,7 +350,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -291,6 +367,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 49X97QXFJP;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "ios-dev-test-project-ui/Resources/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "iOS Dev Test Project (UI)";
@@ -298,7 +375,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -319,6 +396,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 49X97QXFJP;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "ios-dev-test-project-ui/Resources/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "iOS Dev Test Project (UI)";
@@ -326,7 +404,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -362,6 +440,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		183443BF28915B0200A8B33D /* XCRemoteSwiftPackageReference "SwiftyGif" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kirualex/SwiftyGif.git";
+			requirement = {
+				kind = exactVersion;
+				version = 5.4.3;
+			};
+		};
+		186FA273289129C500A27C2A /* XCRemoteSwiftPackageReference "CHTCollectionViewWaterfallLayout" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/chiahsien/CHTCollectionViewWaterfallLayout.git";
+			requirement = {
+				kind = exactVersion;
+				version = 0.9.9;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		183443C028915B0200A8B33D /* SwiftyGif */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 183443BF28915B0200A8B33D /* XCRemoteSwiftPackageReference "SwiftyGif" */;
+			productName = SwiftyGif;
+		};
+		186FA274289129C500A27C2A /* CHTCollectionViewWaterfallLayout */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 186FA273289129C500A27C2A /* XCRemoteSwiftPackageReference "CHTCollectionViewWaterfallLayout" */;
+			productName = CHTCollectionViewWaterfallLayout;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 18AA44D128901CD70059F757 /* Project object */;
 }
